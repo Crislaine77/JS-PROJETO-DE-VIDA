@@ -71,10 +71,10 @@ function atualizarCronometro() {
     for (let i=0; i < contadores.length; i++) {
         let tempo = calculaTempo(tempos[i]);
 
-    document.getElementById("dias0"+1).textContent = tempo[0];
-    document.getElementById("horas0"+1).textContent = tempo[1];
-    document.getElementById("min0"+1).textContent = tempo[2];
-    document.getElementById("seg0"+1).textContent = tempo[3];
+    document.getElementById("dias0"+i).textContent = tempo[0];
+    document.getElementById("horas0"+i).textContent = tempo[1];
+    document.getElementById("min0"+i).textContent = tempo[2];
+    document.getElementById("seg0"+i).textContent = tempo[3];
 
     }
     atualizaSituacao();
